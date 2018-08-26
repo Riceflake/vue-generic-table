@@ -3,7 +3,8 @@
     <div class="container">
       <h1>Vue Generic Table</h1>
       Here's an example of what I did @ Yoopies during my internship.
-      You can play with the given options such as pagination or the total displaying items with limit.
+      You can play with the given options such as pagination
+      or the total displaying items with limit.
       <div class="form-group">
         <b-form inline>
           <b-form-checkbox

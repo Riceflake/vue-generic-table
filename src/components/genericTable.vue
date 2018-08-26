@@ -176,72 +176,72 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    .search {
-      margin-bottom: 10px;
-      margin-right: 10px;
+  .search {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  table {
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-radius: 3px;
+    background-color: white;
+    margin: 10px;
+
+    &.table-striped > tbody > tr:nth-child(even) > td,
+    .table-striped > tbody > tr:nth-child(even) > th {
+      background-color: #f9f9f9;
     }
 
-    table {
-      border-collapse: separate;
-      border-spacing: 2px;
-      border-radius: 3px;
+    &.table-striped > tbody > tr:nth-child(odd) > td,
+    .table-striped > tbody > tr:nth-child(odd) > th {
       background-color: white;
-      margin: 10px;
+    }
 
-      &.table-striped > tbody > tr:nth-child(even) > td,
-      .table-striped > tbody > tr:nth-child(even) > th {
-        background-color: #f9f9f9;
-      }
+    th {
+      padding: 8px;
+      background-color: #f9f9f9;
+      color: rgba(76, 89, 90, 0.66);
+      cursor: pointer;
 
-      &.table-striped > tbody > tr:nth-child(odd) > td,
-      .table-striped > tbody > tr:nth-child(odd) > th {
-        background-color: white;
-      }
+      &.active {
+        color: #4C595A;
 
-      th {
-        padding: 8px;
-        background-color: #f9f9f9;
-        color: rgba(76, 89, 90, 0.66);
-        cursor: pointer;
-
-        &.active {
-          color: #4C595A;
-
-          & .arrow {
-            opacity: 1;
-          }
+        & .arrow {
+          opacity: 1;
         }
       }
+    }
 
-      .arrow {
-        display: inline-block;
-        vertical-align: middle;
-        width: 0;
-        height: 0;
-        margin-left: 5px;
-        opacity: 0.66;
+    .arrow {
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      opacity: 0.66;
 
-        &.asc {
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
-          border-bottom: 4px solid rgba(76, 89, 90, 0.66);;
-        }
-
-        &.dsc {
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
-          border-top: 4px solid rgba(76, 89, 90, 0.66);;
-        }
+      &.asc {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid rgba(76, 89, 90, 0.66);;
       }
 
-      td {
-        padding: 8px;
+      &.dsc {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid rgba(76, 89, 90, 0.66);;
       }
+    }
+
+    td {
+      padding: 8px;
     }
   }
+}
 </style>
