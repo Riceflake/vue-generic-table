@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "https://vue-generic-table.riceflake.com/"
+  status = 200
